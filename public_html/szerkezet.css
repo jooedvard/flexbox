@@ -1,9 +1,7 @@
 @charset "UTF-8";
 main,header,article{
     border:1px solid grey;
-    box-sizing: border-box;
-    padding:5px;
-    margin:2px;
+
 }
 body{background-color: gray;}
 main{
@@ -11,6 +9,13 @@ main{
     max-width: 800px;
     width: 80%;
     margin:auto;
+
+
+}
+header{
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+    padding-left:10px;
 }
 article{
     background-color: white;
@@ -18,29 +23,63 @@ article{
 /*szerkezet */
 .four{
     display:flex;
-   
-   
-    justify-content: center;
-    align-items: center;
-    
 
+}
+.four article{
+    margin: 5px;
+    padding:5px;
+    width: 190px;
+
+}
+
+.two{
+    display:flex;
+    padding: 10px;
 
 
 }
-.two{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-} 
-
-
-
-
-
-@media screen and (max-width:600px){
-    main{
-
-        flex-direction: column;
-
-    }
+.two article{
+    margin: 5px;
+    padding:5px;
+}
+nav ul{
+    display:flex;
+}
+nav ul li{
+    list-style-type: none;
+    width: 50%;
+  
+}
+.item{
+    display:flex;
+     
+}
+.item a{
+  width: 100px;
+  border: 1px solid white;
+  
+  text-align: center;
+  
+}
+nav li{
+    margin: 5px;
+   
+    
+}
+.home{
+border:1px solid white;
+padding-left: 20px;
+padding-right:20px;
+}
+.item2{
+    display:flex;
+    margin-left:25%;
+     width:50%;
+}
+.item2 a{
+  align-items: center;
+  width: 100px;
+  border: 1px solid white;
+  text-align: center;
+  
 }
