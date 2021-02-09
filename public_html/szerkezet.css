@@ -16,29 +16,31 @@ article{
     background-color: white;
 }
 /*szerkezet */
-main{
+.four{
     display:flex;
+   
+   
+    justify-content: center;
+    align-items: center;
+    
+
+
+
+}
+.two{
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-around;
-}
-article{
-    width:calc(25% - 4px);
-    align-self: flex-start;
-}
-header {
-    width:100%;
-    order:-1;
-}
-main article:nth-child(4){
-    color:red;
-    order:-1;
+    justify-content: space-around;
 } 
+
+
+
+
+
 @media screen and (max-width:600px){
     main{
 
-    flex-direction: column;
- 
-}
+        flex-direction: column;
+
+    }
 }
