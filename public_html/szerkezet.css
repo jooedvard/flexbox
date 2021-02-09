@@ -1,0 +1,15 @@
+@charset "UTF-8";
+main,header,article{
+    border:1px solid grey;
+    padding:2px;
+}
+body{background-color: gray;}
+main{
+    background-color: pink;
+    max-width: 800px;
+    width: 80%;
+    margin:auto;
+}
+article{
+    background-color: white;
+}
